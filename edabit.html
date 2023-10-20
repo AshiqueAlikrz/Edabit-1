@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //Create a function that takes an array containing only numbers and return the first element.
+
+      // Examples
+      // getFirstValue([1, 2, 3]) ➞ 1
+
+      // getFirstValue([80, 5, 100]) ➞ 80
+
+      // getFirstValue([-500, 0, 50]) ➞ -500
+
+      function getFirstValue(arr) {
+        if (Array.isArray(arr) && arr.every((val) => typeof val === "number")) {
+          return arr[0];
+        } else {
+          return "Invalid input. Please provide an array containing only numbers.";
+        }
+      }
+
+      console.log(getFirstValue([12, 23, 43]));
+    </script>
+  </body>
+</html>
